@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <metahttp-equiv='X-UA-compatible'conten="IE= edge">
+    <meta name "viewport" conten="whith=device-whith, initial scale 1.0">
+<title>document</title> 
+</head>
+<body bgcolor="#D1F2EB">
+<h1 style="color:#FF0000">  Hola ,  este es el listado de familiares </h1>
+{% for familiares in familia %}
+<h2>{{familiares.nombre }}</h2> 
+<h4>Es mi {{familiares.parentezco }}.  
+Tiene {{familiares.edad }}de edad </h4>
+{% if familiares.estudia == True %}
+    <h5> Actualmente es estudiante </h5>
+{% else %}
+    <h5> Actualmente trabaja </h5>
+ 
+{% endif %}
+ {% endfor %} 
+</body>
+</html>
