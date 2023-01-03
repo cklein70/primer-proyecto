@@ -19,6 +19,6 @@ from mi_familia.views import ingreso_familiar, lista_familiares
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ingreso_familiar/', ingreso_familiar),
+    path('ingreso_familiar/<str:nombre>/<str:parentezco>/<int:edad>/<int:estudia>/', ingreso_familiar),
     path ("lista_familiares/", lista_familiares),
 ]
